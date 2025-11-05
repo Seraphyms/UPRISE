@@ -23,6 +23,10 @@ h1{
     margin-bottom: 0;
 }
 
+header h3:hover, li:hover{
+    transform: scale(1.05);
+}
+
 h2{
     font-size: 2.5em;
     margin-left: 10%;
@@ -42,6 +46,16 @@ a{
 #logolien, #droiteheader{
     display: flex;
     align-items: center;
+}
+
+header h1, header h2{
+    font-size: 3em;
+
+}
+
+header{
+    background-image: url(Pics/HeroBand.webp);
+    background-size:100%;
 }
 
 #logo{
@@ -65,30 +79,16 @@ ul{
     border-radius: 8px;
     width: fit-content;
     height: fit-content;
-    padding: 12px;
-    margin: 10px;
+    justify-content: center;
+    padding: 9px;
     border: 2px solid #570303;
     transition: all .3s ease-in-out;
     }
 
-    .button.primary{
-    background: blueviolet;
-    color: white;
-    }
-
-    .button.primary:hover{
-    background: rgb(169, 121, 214); 
-    border-color: rgb(169, 121, 214);
-    }
-
-    .button.secondary{
-    color: blueviolet;
-    background: transparent;
-    }
-
-    .button.secondary:hover{
-    border-color: rgb(169, 121, 214);
-    color: rgb(169, 121, 214);
+    .button:hover{
+    border-color: rgb(118, 11, 11);
+    background-color: #570303;
+    transform: scale(1.05);
     }
 
 #panier{
@@ -101,6 +101,7 @@ ul{
 #profil{
     width: 56px;
     height: 56px;
+    margin-left: 15px;
     border-radius: 100%;
     border: 3px solid rgb(67, 1, 1);
 }
@@ -123,9 +124,12 @@ ul{
 
 article p{
     font-family: Aubrey;
-    margin: 0;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin: 3%;
+    text-align: justify;
+}
+
+article .button{
+    width: 100%;
 }
 
 .un, .deux{
@@ -142,8 +146,7 @@ article p{
 }
 
 .description{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding:10px;
 }
 
 article h2{
