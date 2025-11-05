@@ -23,7 +23,7 @@ h1{
     margin-bottom: 0;
 }
 
-header h3:hover, li:hover{
+nav h3:hover, li:hover{
     transform: scale(1.05);
 }
 
@@ -49,13 +49,31 @@ a{
 }
 
 header h1, header h2{
-    font-size: 3em;
-
+    font-size: 4em;
 }
 
 header{
-    background-image: url(Pics/HeroBand.webp);
-    background-size:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Pics/HeroBand.jpg);
+    background-size: cover;
+    height: calc(90vh);
+    width: 100%;
+}
+
+.texthead, .titles{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #logo{
@@ -116,6 +134,13 @@ ul{
     margin-bottom: 10px;
 }
 
+.prix{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5%;
+    color: #570303;
+}
+
 #BestShoes{
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +157,7 @@ article .button{
     width: 100%;
 }
 
-.un, .deux{
+article{
     display: flex;
     color: black;
     flex-direction: column;
@@ -141,12 +166,13 @@ article .button{
     background-color: rgb(224, 224, 224);
     width: 23%;
     height: auto;
-    overflow:auto;  
-    justify-content: space-between;  
+    overflow:auto;
+    margin-top: 0;
 }
 
 .description{
-    padding:10px;
+    padding: 10px;
+    padding-top: 0;
 }
 
 article h2{
@@ -162,4 +188,5 @@ article img{
 .bottom{
     display: flex;
     justify-content: center;
+    align-items: end;
 }
