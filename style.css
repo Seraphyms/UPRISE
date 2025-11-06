@@ -1,6 +1,6 @@
 body{
     background-color: rgb(0, 0, 0);
-    color: rgb(217, 215, 215);
+    color: rgb(255, 255, 255);
     margin: 0;
     text-align: center;
     font-family: Grenze Gotisch;
@@ -8,6 +8,7 @@ body{
 
 main{
     margin:40px;
+    margin-top: 0;
 }
 
 nav {
@@ -15,12 +16,48 @@ nav {
     flex-wrap: wrap;
     background-image: url(Pics/backheader.webp)  ;
     padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     justify-content: space-between;
+    text-align: left; 
+    flex: 1;
 }
+
+nav ul{
+       display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 0%;
+    justify-content: flex-start; /* <-- aligne les éléments à gauche */
+    text-align: left;
+}
+
+nav ul li ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 100%;
+    background: rgb(74, 0, 0,0.8);
+    border-radius: 40px;
+    padding: 5%;
+    display: none; /* caché par défaut */
+    flex-direction: column;
+   width: 400%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  nav ul li:hover > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li ul li a:hover {
+    transition: all .3s ease-in-out;
+  }
 
 h1{
     font-size :4em;
-    margin-bottom: 0;
+    margin-bottom: -30px;
 }
 
 nav h3:hover, li:hover{
@@ -59,7 +96,7 @@ header{
     align-items: center;
     background-image: url(Pics/HeroBand.jpg);
     background-size: cover;
-    height: calc(90vh);
+    height: calc(87vh);
     width: 100%;
 }
 
@@ -68,16 +105,45 @@ header{
     width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     margin: 0;
+}
+
+.texthead p{
+    margin: 0;
+    font-size: 6em;
+}
+
+
+.texthead p:nth-child(1){
+    display: flex;
+    width: fit-content;
+    width: fit-content;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.texthead p:nth-child(2){
+    margin-left: 25%;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+b{
+    font-size: 0.8em;
 }
 
 .buttons{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 2em;
 }
 
 #logo{
-    height: 56px;
+    height: 46px;
     width: 56px;
 }
 
@@ -89,7 +155,7 @@ ul{
     font-size: 1.3em;
 }
 
-
+/*Buttons*/
     .button{
     display: flex;
     background-color: rgb(122, 27, 27);
@@ -107,6 +173,17 @@ ul{
     border-color: rgb(118, 11, 11);
     background-color: #570303;
     transform: scale(1.05);
+    }
+
+
+    .button.secondary{
+    background-color:rgba(128, 7, 7, 0.5);
+    }
+
+    .button.secondary:hover{
+    border-color: rgba(98, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    background-color: rgba(86, 1, 1, 0.5);
     }
 
 #panier{
