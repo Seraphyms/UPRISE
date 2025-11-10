@@ -13,11 +13,16 @@ main{
 
 nav {
     display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+        box-sizing: border-box;
     flex-wrap: wrap;
     background-image: url(Pics/backheader.webp)  ;
     padding: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+    z-index: 100;
     justify-content: space-between;
     text-align: left; 
     flex: 1;
@@ -28,6 +33,9 @@ nav ul{
     gap: 24px;
     align-items: center;
     padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    font-size: 1.5em;
     justify-content: flex-start; /* <-- aligne les éléments à gauche */
     text-align: left;
 }
@@ -37,7 +45,7 @@ nav ul li ul {
     display: flex;
     justify-content: center;
     top: 100%;
-    background: rgb(74, 0, 0,0.8);
+    background: rgb(74, 0, 0,1);
     border-radius: 40px;
     padding: 5%;
     display: none; /* caché par défaut */
@@ -95,7 +103,7 @@ header{
     align-items: center;
     background-image: url(Pics/HeroBand.jpg);
     background-size: cover;
-    height: calc(87vh);
+    height: calc(100vh);
     width: 100%;
 }
 
@@ -146,7 +154,7 @@ b{
     width: 56px;
 }
 
-ul{
+header ul{
     list-style: none;
     display: flex;
     gap: 24px;
@@ -292,15 +300,26 @@ article img{
 }
 
 #prefooter{
-    background-color:rgb(26, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    background-color:rgb(19, 0, 0);
     height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom:20px;
+    text-decoration-line: underline;
+    text-decoration-style:solid;
+    text-decoration-color: rgb(255, 255, 255);
+    text-underline-offset: 20px;
 }
 
 .partof{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.2;
 }
