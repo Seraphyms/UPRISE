@@ -2,6 +2,7 @@ body{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     margin: 0;
+    padding-bottom: 0;
     text-align: center;
     font-family: Grenze Gotisch;
 }
@@ -246,6 +247,7 @@ article{
     display: flex;
     color: black;
     flex-direction: column;
+    justify-content: space-between;
     border: 3px solid rgb(82, 82, 82);
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
@@ -304,6 +306,7 @@ article img{
     height: fit-content;
     display: flex;
     flex-direction: row;
+    margin: 0;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -322,4 +325,11 @@ article img{
     list-style-type: none;
     text-align: left;
     font-size: 1.2;
+}
+
+footer {
+    background-color: rgb(35, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0%;
 }
